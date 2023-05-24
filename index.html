@@ -4,81 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janhvi and Vaibhav's Engagement Photos</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #3da37a;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            color: #ffffff;
-        }
-
-        .engagement-glimpse {
-            text-align: center;
-            margin: 20px;
-        }
-
-        footer {
-            background-color: #3da37a;
-            padding: 10px;
-            text-align: center;
-            color: #ffffff;
-            font-size: 12px;
-        }
-
-        #gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .gallery-item {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item img:hover {
-            opacity: 0.7;
-        }
-
-        /* Mobile View */
-        @media (max-width: 768px) {
-            .gallery-item {
-                width: 150px;
-                height: 150px;
-            }
-        }
+        /* Your CSS styles here */
     </style>
 </head>
 <body>
@@ -98,30 +25,24 @@
     <footer>
         <div class="footer-container">
             <p>&copy; 2023 Ayush Saxena</p>
-            <!-- <a href="#">
-                <img class="footer-image" src="https://capsule-render.vercel.app/api?type=waving&color=3da37a&height=120&section=footer" alt="Footer Image">
-            </a> -->
         </div>
     </footer>
-    
-   
 
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             var gallery = document.getElementById('gallery');
             var imageFilenames = [
-            "DSC03244.JPG","DSC03245.JPG","DSC03246.JPG","DSC03248.JPG","DSC03250.JPG","DSC03251.JPG","DSC03280.JPG","DSC03281.JPG","DSC03282.JPG","DSC03292.JPG","DSC03298.JPG","DSC03300.JPG","DSC03304.JPG","DSC03307.JPG","DSC03308.JPG","DSC03314.JPG","DSC03316.JPG","DSC03318.JPG","DSC03319.JPG","DSC03321.JPG","DSC03322.JPG","DSC03327.JPG","DSC03332.JPG","DSC03336.JPG","DSC03341.JPG","DSC03342.JPG","DSC03344.JPG","DSC03346.JPG","DSC03350.JPG","DSC03355.JPG","DSC03357.JPG","DSC03360.JPG","DSC03365.JPG","DSC03366.JPG","DSC03369.JPG","DSC03371.JPG","DSC03373.JPG","DSC03374.JPG","DSC03379.JPG","DSC03380.JPG","DSC03381.JPG","DSC03382.JPG","DSC03393.JPG","DSC03394.JPG","DSC03395.JPG","DSC03396.JPG","DSC03397.JPG","DSC03398.JPG","DSC03399.JPG","DSC03401.JPG","DSC03402.JPG","DSC03404.JPG","DSC03405.JPG","DSC03407.JPG","DSC03408.JPG","DSC03409.JPG","DSC03411.JPG","DSC03412.JPG","DSC03413.JPG","DSC03414.JPG","DSC03415.JPG","DSC03416.JPG","DSC03417.JPG","DSC03419.JPG","DSC03420.JPG","DSC03422.JPG","DSC03424.JPG","DSC03425.JPG","DSC03427.JPG","DSC03428.JPG","DSC03429.JPG","DSC03432.JPG","DSC03437.JPG","DSC03439.JPG","DSC03440.JPG","DSC03441.JPG","DSC03442.JPG","DSC03444.JPG","DSC03445.JPG","DSC03448.JPG","DSC03455.JPG","DSC03464.JPG","DSC03465.JPG","DSC03466.JPG","DSC03467.JPG","DSC03469.JPG","DSC03470.JPG","DSC03476.JPG","DSC03482.JPG","DSC03490.JPG","DSC03492.JPG","DSC03496.JPG","DSC03497.JPG","DSC03500.JPG","DSC03501.JPG","DSC03502.JPG","DSC03506.JPG","DSC03507.JPG","DSC03512.JPG","DSC03515.JPG","DSC03517.JPG","DSC03519.JPG","DSC03520.JPG","DSC03527.JPG","DSC03535.JPG","DSC03543.JPG","DSC03544.JPG","DSC03550.JPG","DSC03554.JPG","DSC03555.JPG","DSC03556.JPG","DSC03559.JPG","DSC03567.JPG","DSC03573.JPG","DSC03581.JPG",            ];
+                "DSC03244.JPG","DSC03245.JPG","DSC03246.JPG","DSC03248.JPG","DSC03250.JPG","DSC03251.JPG","DSC03280.JPG","DSC03281.JPG","DSC03282.JPG","DSC03292.JPG","DSC03298.JPG","DSC03300.JPG","DSC03304.JPG","DSC03307.JPG","DSC03308.JPG","DSC03314.JPG","DSC03316.JPG","DSC03318.JPG","DSC03319.JPG","DSC03321.JPG","DSC03322.JPG","DSC03327.JPG","DSC03332.JPG","DSC03336.JPG","DSC03341.JPG","DSC03342.JPG","DSC03344.JPG","DSC03346.JPG","DSC03350.JPG","DSC03355.JPG","DSC03357.JPG","DSC03360.JPG","DSC03365.JPG","DSC03366.JPG","DSC03369.JPG","DSC03371.JPG","DSC03373.JPG","DSC03374.JPG","DSC03379.JPG","DSC03380.JPG","DSC03381.JPG","DSC03382.JPG","DSC03393.JPG","DSC03394.JPG","DSC03395.JPG","DSC03396.JPG","DSC03397.JPG","DSC03398.JPG","DSC03399.JPG","DSC03401.JPG","DSC03402.JPG","DSC03404.JPG","DSC03405.JPG","DSC03407.JPG","DSC03408.JPG","DSC03409.JPG","DSC03411.JPG","DSC03412.JPG","DSC03413.JPG","DSC03414.JPG","DSC03415.JPG","DSC03416.JPG","DSC03417.JPG","DSC03419.JPG","DSC03420.JPG","DSC03422.JPG","DSC03424.JPG","DSC03425.JPG","DSC03427.JPG","DSC03428.JPG","DSC03429.JPG","DSC03432.JPG","DSC03437.JPG","DSC03439.JPG","DSC03440.JPG","DSC03441.JPG","DSC03442.JPG","DSC03444.JPG","DSC03445.JPG","DSC03448.JPG","DSC03455.JPG","DSC03464.JPG","DSC03465.JPG","DSC03466.JPG","DSC03467.JPG","DSC03469.JPG","DSC03470.JPG","DSC03476.JPG","DSC03482.JPG","DSC03490.JPG","DSC03492.JPG","DSC03496.JPG","DSC03497.JPG","DSC03500.JPG","DSC03501.JPG","DSC03502.JPG","DSC03506.JPG","DSC03507.JPG","DSC03512.JPG","DSC03515.JPG","DSC03517.JPG","DSC03519.JPG","DSC03520.JPG","DSC03527.JPG","DSC03535.JPG","DSC03543.JPG","DSC03544.JPG","DSC03550.JPG","DSC03554.JPG","DSC03555.JPG","DSC03556.JPG","DSC03559.JPG","DSC03567.JPG","DSC03573.JPG","DSC03581.JPG"
+            ];
 
-            // Loop through the image filenames and create gallery items
             imageFilenames.forEach(function(filename) {
                 var galleryItem = document.createElement('div');
                 galleryItem.className = 'gallery-item';
 
                 var image = document.createElement('img');
-                image.src = 'img/' + filename; // Update the path to the 'img' folder
+                image.src = 'img/' + filename;
 
                 image.addEventListener('click', function() {
-                    // Create a bigger view of the clicked image
                     var bigImage = document.createElement('img');
                     bigImage.src = this.src;
                     bigImage.style.width = '100%';
@@ -135,12 +56,10 @@
                     bigImage.style.margin = 'auto';
                     bigImage.style.zIndex = '9999';
 
-                    // Close the big image on click
                     bigImage.addEventListener('click', function() {
                         this.parentNode.removeChild(this);
                     });
 
-                    // Append the big image to the body
                     document.body.appendChild(bigImage);
                 });
 
