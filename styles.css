@@ -1,0 +1,23 @@
+footer {
+    background-color: #3da37a;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    position: relative; /* Add this line */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container p {
+    margin-right: 10px;
+}
+
+.footer-image {
+    max-width: 100%; /* Add this line */
+    max-height: 120px; /* Add this line */
+}
