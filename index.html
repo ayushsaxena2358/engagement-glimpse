@@ -100,8 +100,18 @@
             <p>&copy; 2023 Ayush Saxena</p>
         </div>
     </footer>
-
     <script>
+        // Check if styles cookie is set
+        function getStylesFromCookie() {
+          const stylesCookie = document.cookie.match(/styles=([^;]+)/);
+          if (stylesCookie) {
+            const cachedStyles = decodeURIComponent(stylesCookie[1]);
+            const styleElement = document.createElement('style');
+            styleElement.innerHTML = cachedStyles;
+            document.head.appendChild(styleElement);
+          }
+        }
+
         window.addEventListener('DOMContentLoaded', function() {
             var gallery = document.getElementById('gallery');
             var imageFilenames = [
@@ -139,6 +149,9 @@
                 galleryItem.appendChild(image);
                 gallery.appendChild(galleryItem);
             });
+
+            // Call the function to apply cached styles
+            getStylesFromCookie();
         });
     </script>
 </body>
